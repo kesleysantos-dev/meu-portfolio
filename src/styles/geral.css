@@ -147,6 +147,43 @@ h1 {
     color: var(--primaria);
 }
 
+
+
+.social-icons {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    margin-top: 25px;
+    width: 100%;    
+            
+    
+    
+         
+           
+}
+
+.social-icons a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem; 
+    color: #eee; 
+    cursor: pointer;
+    
+    padding-left: 20px;
+    transition: all 0.3s ease;
+    text-decoration: none;
+    
+}
+.social-icons a:hover {
+  color: #007bff; 
+  transform: scale(1.2) translateY(-3px); 
+}
+.social-icons a svg {
+    display: block;
+    pointer-events: none; /* Faz o clique atravessar o desenho e pegar no link <a> */
+}
+
 /*ÍCONES FLUTUANTES*/
 .icones-flutuantes {
     position: fixed;
@@ -187,6 +224,7 @@ h1 {
     padding: 6rem 2rem;
     margin-top: -100px;
     text-align: center;
+    pointer-events: none
 }
 
 .sobre-titulo {
@@ -416,7 +454,30 @@ h1 {
     box-shadow: 0 5px 15px rgba(79, 70, 229, .4);
 }
 
-/*ANIMAÇÕES CHAVE*/
+/*ANIMAÇÕES*/
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.animar-entrada {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
+
+
+.animar-entrada-delay {
+    opacity: 0; 
+    animation: fadeInUp 0.8s ease-out 0.4s forwards; 
+}
+
 @keyframes flutuar {
     0%, 100% { transform: translateY(0); }
     50% { transform: translateY(-11px); }
