@@ -1,6 +1,7 @@
 import imgCrud from './assets/img-crud.png';
 import imgAanimal from './assets/logoA-A.png';
-import logoBc from './assets/logo-bikcraft.png';
+import logobu from './assets/icon-bellasup.jpg';
+import logob from './assets/logob.png';
 import logoApp from './assets/logoapp.jpg';
 
 export const meusProjetos = [
@@ -24,11 +25,12 @@ export const meusProjetos = [
   },
   {
     id: 3,
-    titulo: 'Bikcraft',
+    titulo: 'BellasUp | Agendamento Inteligente',
     descricao:
-      '🚀Bikcraft é uma loja virtual de bicicletas elétricas de alta precisão e qualidade, feitas sob medida para o cliente. A loja conta com vários modelos de bicicletas disponíveis e também com opções variadas de seguro. Explore o mundo na sua velocidade com a Bikcraft.',
-    imagem: logoBc,
-    linkAcessar: 'https://bikcraft-mauve-alpha.vercel.app/',
-    linkGithub: 'https://github.com/kesleysantos-dev/Bikcraft',
+      '🚀Aplicação de agendamento e gestão inteligente com validação real-time, integração via API do WhatsApp e checkout Pix com cronômetro reativo. Interface UX/UI fluida e otimizada para conversão. Repositório privado por segurança e propriedade intelectual ' +
+      '   AVISO: AO ACESSAR O SITE, CADASTRE-SE PARA TESTAR AS FUNCIONALIDADES',
+    imagem: logob,
+    linkAcessar: 'https://bellasup.vercel.app//',
+    // linkGithub: 'https://github.com/kesleysantos-dev/Bikcraft',
   },
 ];

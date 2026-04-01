@@ -57,16 +57,18 @@ const Projetos = () => {
               >
                 Acessar Projeto
               </a>
-              <a
-                href={projeto.linkGithub}
-                target="_blank"
-                rel="noreferrer"
-                className="btn-projeto"
-                onClick={(e) => e.stopPropagation()}
-              >
-                <img src={githubIcon} alt="" className="icone-social-btn" />
-                GitHub
-              </a>
+              {projeto.linkGithub && (
+                <a
+                  href={projeto.linkGithub}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="btn-projeto"
+                  onClick={(e) => e.stopPropagation()}
+                >
+                  <img src={githubIcon} alt="" className="icone-social-btn" />
+                  GitHub
+                </a>
+              )}
             </div>
           </div>
         ))}
