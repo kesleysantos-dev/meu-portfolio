@@ -5,11 +5,11 @@ import SocialLinks from './SocialLinks';
 const Inicio = () => {
   return (
     <header id="inicio" className="cabecalho">
-      <div className="foto-wrapper">
+      <div className="foto-wrapper animar-entrada">
         <img
           src={minhaFoto}
           alt="Kesley Santos"
-          className="animar-entrada foto-perfil"
+          className="foto-perfil"
         />
       </div>
       <h1 className="animar-entrada">Kesley Santos</h1>

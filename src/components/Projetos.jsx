@@ -47,6 +47,14 @@ const Projetos = () => {
               <p className="paragrafo-projetos">{projeto.descricao}</p>
             </div>
 
+            {projeto.tecnologias && (
+              <div className="tecnologias-lista">
+                {projeto.tecnologias.map((tech) => (
+                  <span key={tech} className="tecnologia-badge">{tech}</span>
+                ))}
+              </div>
+            )}
+
             <div className="botoes-projeto">
               <a
                 href={projeto.linkAcessar}

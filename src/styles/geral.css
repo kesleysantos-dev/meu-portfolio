@@ -78,7 +78,10 @@ form input{
     height: 280px;
     margin-bottom: 20px;
     margin-top: 40px;
-    animation: flutuar 4s ease-in-out infinite;
+}
+
+.foto-wrapper.animar-entrada {
+    animation: fadeInUp 0.8s ease-out forwards, flutuar 4s ease-in-out 0.8s infinite;
 }
 
 .foto-wrapper .foto-perfil {
@@ -338,6 +341,26 @@ h1 {
 .paragrafo-projetos {
     color: rgba(226, 232, 240, 0.8);
     line-height: 1.5;
+}
+
+.tecnologias-lista {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 0 1.5rem 1rem;
+    margin-top: auto;
+}
+
+.tecnologia-badge {
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.03em;
+    padding: 3px 10px;
+    border-radius: 999px;
+    background: rgba(79, 70, 229, 0.15);
+    color: #a5b4fc;
+    border: 1px solid rgba(79, 70, 229, 0.3);
+    white-space: nowrap;
 }
 
 .botoes-projeto {
